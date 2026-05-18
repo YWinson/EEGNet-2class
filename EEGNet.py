@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 
 class EEGNetModel(nn.Module): # EEGNET-8,2
-    def __init__(self, chans=22, classes=4, time_points=1001, temp_kernel=32,
+    def __init__(self, chans=22, classes=2, time_points=1001, temp_kernel=32,
                  f1=16, f2=32, d=2, pk1=8, pk2=16, dropout_rate=0.5, max_norm1=1, max_norm2=0.25):
         super(EEGNetModel, self).__init__()
         # Calculating FC input features
